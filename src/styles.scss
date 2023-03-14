@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Imports */
+@import './styles/animations';
+@import './styles/mixins';
+@import './styles/variables';
+
+/* By Tag */
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* By Class */
+.full-height {
+  height: 100%;
+}
+.full-width {
+  width: 100%;
+}
+.horizontal-right {
+  justify-content: flex-end;
+}
+.vertical-center {
+  align-items: center;
+  display: flex;
+}
+
+/* By ID */

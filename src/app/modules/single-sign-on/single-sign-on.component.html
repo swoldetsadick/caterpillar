@@ -1,0 +1,20 @@
+<div class="full-height full-width">
+  <div id="subtitle" class="subtitle-height full-width">
+    <div class="container full-height padding-left vertical-center">
+      <img style="height: 90%" [src]="YOUR_IMAGE_URL" />
+      <span style="margin-left: 1%; font-weight: bold">Single Sign On (SSO)</span>
+    </div>
+    <div class="container container-space full-height vertical-center"></div>
+    <div class="container container-space full-height horizontal-right padding-right vertical-center">
+      <mat-icon aria-hidden="false" fontIcon="home"></mat-icon>
+      <button class="nav-button" mat-button [routerLink]="['/sso/login']" [routerLinkActive]="'active-nav-button'" (isActiveChange)="this.onRouterLinkActive($event, 'login')">Login</button>
+      <button class="nav-button" mat-button [routerLink]="['/sso/manage']" [routerLinkActive]="'active-nav-button'" (isActiveChange)="this.onRouterLinkActive($event, 'manage')">Manage</button>
+      <button class="nav-button" mat-button [routerLink]="['/sso/register']" [routerLinkActive]="'active-nav-button'" (isActiveChange)="this.onRouterLinkActive($event, 'register')">Register</button>
+      <button class="nav-button" mat-button [routerLink]="['/sso/reset']" [routerLinkActive]="'active-nav-button'" (isActiveChange)="this.onRouterLinkActive($event, 'reset')">Reset</button>
+      <button class="nav-button" mat-button [routerLink]="['/sso/update']" [routerLinkActive]="'active-nav-button'" (isActiveChange)="this.onRouterLinkActive($event, 'update')">Update</button>
+    </div>
+  </div>
+  <div class="main-height full-width">
+    <router-outlet></router-outlet>
+  </div>
+</div>
